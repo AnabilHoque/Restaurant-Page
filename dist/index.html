@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/pizzeria-favicon.ico">
     <title>Restaurant Page</title>
 </head>
 <body>
-    <div id="content"></div>
+    <div id="content">
+        <header>
+            <h1>Mamma Mia Pizzeria</h1>
+            <div class="tabbed-buttons">
+                <button class="selected" id="home-button" type="button">Home</button>
+                <button id="menu-button" type="button">Menu</button>
+                <button id="contact-button" type="button">Contact</button>
+            </div>
+        </header>
+        <main>
+            <div class="home-content main-block">
+                <h1>Home to the best Pizza in the world!</h1>
+                <div class="intro">
+                    Welcome to Mamma Mia Pizzeria, where culinary excellence meets the art of pizza-making. 
+                    Nestled in the heart of Venice, our pizzeria is more than just a place to satisfy 
+                    your cravings; it's an extraordinary culinary journey that promises to tantalize your taste 
+                    buds like never before. With a passion for perfection and a commitment to using only the 
+                    finest ingredients, we proudly present to you the best pizza in the world.<br />
+                    <img src="./images/pizza-intro.jpg" alt="pizza">
+                </div>
+                <div class="hours">
+                    <h2>Hours</h2>
+                    <ul>
+                        <li>Monday: 9am - 6pm</li>
+                        <li>Tuesday: 9am - 6pm</li>
+                        <li>Wednesday: 9am - 6pm</li>
+                        <li>Thursday: 9am - 6pm</li>
+                        <li>Friday: 9am - 6pm</li>
+                        <li>Saturday: 10am - 6pm</li>
+                        <li>Sunday: 10am - 6pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-content main-block"></div>
+            <div class="contact-content main-block"></div>
+        </main>
+        <footer>
+            <p>Copyright &copy; Anabil Hoque</p>
+        </footer>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
