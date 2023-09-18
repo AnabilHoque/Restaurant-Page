@@ -110,10 +110,14 @@ body {
 /* Home Content */
 
 .home-content {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.home-content h1 {
+    text-align: center;
 }
 
 .home-content .intro {
@@ -169,8 +173,12 @@ body {
 /* Contact Content */
 
 .contact-content {
-    display: block;
+    display: none;
     text-align: center;
+}
+
+#content main .contact-content {
+    padding: 25px;
 }
 
 .contact-content div {
