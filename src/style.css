@@ -1,0 +1,212 @@
+/* General Properties */
+
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+:root {
+    --text-color: rgb(255, 255, 255);
+    --background-block-color: rgba(15, 15, 16, 0.8);
+    --selection-color: rgb(255, 0, 0);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-image: url("./assets/mamma-mia-background.jpg");
+    background-size: cover;
+    background-clip: content-box;
+    background-attachment: fixed;
+    color: var(--text-color);
+    font-family: 'Borel', cursive, sans-serif;
+    min-height: 100%;
+}
+
+#content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+#content header {
+    background-color: var(--background-block-color);
+    padding: 0rem 2rem 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content header h1 {
+    margin: 5px 0px 0px 0px;
+    font-size: 38px;
+}
+
+#content .tabbed-buttons button {
+    color: var(--text-color);
+    background: transparent;
+    font-family: 'Borel', cursive, sans-serif;
+    border: 0px;
+    font-size: 1.35rem;
+    width: 6rem;
+    margin: 0px 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+#content .tabbed-buttons button::before {
+    content: "";
+    background: var(--text-color);
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    width: 0px;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
+    width: 100%;
+    transform: scaleX(0);
+}
+
+#content .tabbed-buttons button:hover::before {
+    transform: scaleX(1);
+}
+
+#content .tabbed-buttons button:hover {
+    transform: scale(1.1);
+}
+
+#content .tabbed-buttons .selected {
+    color: var(--selection-color);
+}
+
+
+/* Main */
+
+#content main {
+    margin: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content main .main-block {
+    background-color: var(--background-block-color);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    padding: 10px;
+    border-radius: 22px;
+}
+
+/* Home Content */
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h1 {
+    text-align: center;
+}
+
+.home-content .intro {
+    width: 70%;
+    line-height: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.home-content .intro img {
+    padding: 5px 0px;
+    width: 60%;
+    border-radius: 22px;
+}
+
+.home-content .hours h2 {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.home-content .hours ul {
+    list-style: none;
+    line-height: 1.5rem;
+    padding: 0px;
+    text-align: center;
+}
+
+/* Menu Content */
+
+.menu-content {
+    display: none;
+    text-align: center;
+}
+
+.menu-content ul {
+    list-style: none;
+    padding: 0px;
+    line-height: 1.5rem;
+}
+
+.menu-content ul a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--text-color);
+}
+
+.menu-content ul a:hover {
+    color: var(--selection-color);
+    transform: scale(1.05);
+}
+
+/* Contact Content */
+
+.contact-content {
+    display: none;
+    text-align: center;
+}
+
+#content main .contact-content {
+    padding: 25px;
+}
+
+.contact-content div {
+    font-size: 22px;
+    padding: 5px;
+}
+
+.contact-content div img {
+    height: 22px;
+    vertical-align: top;
+}
+
+.contact-content > img {
+    width: 80%;
+    border-radius: 22px;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(15, 15, 16, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 20px;
+    margin-bottom: 5px;
+}

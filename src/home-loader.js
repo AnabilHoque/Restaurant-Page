@@ -1,3 +1,5 @@
+import pizzaIntro from './assets/pizza-intro.jpg';
+
 function loadHome() {
     const container = document.querySelector(".home-content.main-block");
 
@@ -13,8 +15,8 @@ function loadHome() {
     
     // image
     const image = document.createElement("img");
-    image.setAttribute("src", "./images/pizza-intro.jpg");
-    image.setAttribute("alt", "pizza");
+    image.src = pizzaIntro;
+    image.alt = "pizza";
     divIntro.appendChild(image);
 
     // hours

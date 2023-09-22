@@ -2,6 +2,7 @@ import { load } from './page-load';
 import { loadHome } from './home-loader';
 import { loadMenu } from './menu-loader';
 import { loadContact } from './contact-loader';
+import './style.css';
 
 function changeSelectedTab(to, ...from) {
     // if 'to' tab is already selected then return
